@@ -1,0 +1,126 @@
+@media screen and (min-width: 601px) {
+  .social_media_link {
+    font-size: 45px;
+    float: right;
+    position: relative;
+    top: 65px;
+  }
+  .facebook {
+    color: blue;
+    opacity: 0;
+  }
+  .fb-animation {
+    animation: facebookAnimatoin 2s;
+  }
+  .ig-animation {
+    animation: instagramAnimatoin 2s;
+  }
+  .gh-animation {
+    animation: githubAnimatoin 2s;
+  }
+  @keyframes facebookAnimatoin {
+    0% {
+      position: relative;
+      top: -100px;
+      right: 120px;
+    }
+    100% {
+      position: relative;
+      right: 0px;
+      bottom: 0;
+    }
+  }
+  @keyframes instagramAnimatoin {
+    0% {
+      position: relative;
+      top: -100px;
+      right: 120px;
+    }
+    100% {
+      position: relative;
+      right: 0px;
+      bottom: 0;
+    }
+  }
+  @keyframes githubAnimatoin {
+    0% {
+      position: relative;
+    }
+    100% {
+      position: relative;
+      bottom: 0;
+    }
+  }
+  .instagram {
+    color: rgb(235, 0, 176);
+    opacity: 0;
+  }
+  .github {
+    opacity: 0;
+    color: black;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .social_media_link {
+    font-size: 29px;
+    position: relative;
+    top: 85px;
+    float: right;
+  }
+
+  .fb-animation {
+    animation: facebookAnimatoin 2s;
+  }
+  .ig-animation {
+    animation: instagramAnimatoin 2s;
+  }
+  .gh-animation {
+    animation: githubAnimatoin 2s;
+  }
+  @keyframes facebookAnimatoin {
+    0% {
+      position: relative;
+      top: -100px;
+      right: 60px;
+    }
+    100% {
+      position: relative;
+      right: 0px;
+      bottom: 0;
+    }
+  }
+  @keyframes instagramAnimatoin {
+    0% {
+      position: relative;
+      top: -100px;
+      right: 60px;
+    }
+    100% {
+      position: relative;
+      right: 0px;
+      bottom: 0;
+    }
+  }
+  @keyframes githubAnimatoin {
+    0% {
+      position: relative;
+    }
+    100% {
+      position: relative;
+      bottom: 0;
+    }
+  }
+  .facebook {
+    color: blue;
+    opacity: 0;
+  }
+  .instagram {
+    color: rgb(235, 0, 176);
+    opacity: 0;
+  }
+  .github {
+    opacity: 0;
+    color: black;
+  }
+}

@@ -1,0 +1,254 @@
+@media screen and (min-width: 601px) {
+  .for-phone-only {
+    display: none;
+  }
+  .fake_nav {
+    background-color: #f3f2ef;
+    height: 60px;
+    box-shadow: gray 2px 2px;
+    padding-right: 40vw;
+  }
+
+  .section_name {
+    margin-left: 200px;
+    position: relative;
+    top: 15px;
+    height: 40px;
+    font-size: 35px;
+    margin-right: 50px;
+    padding: 2px;
+    background-color: #0a66c2;
+    color: white;
+    width: 150px;
+    text-align: center;
+    border-radius: 2px;
+  }
+  .linkedin_container {
+    background-color: #f3f2ef;
+    font-size: 30px;
+    height: 900px;
+    padding-top: 15px;
+    padding-bottom: 50px;
+  }
+  .linkedin_container header {
+    background-color: #ffffff;
+    border-radius: 15px;
+    position: relative;
+    width: 85vw;
+  }
+  .cover {
+    background-color: black;
+    height: 150px;
+    padding: 25px;
+    border-radius: 15px 15px 0 0;
+  }
+  .my_picture {
+    border-radius: 50%;
+    border: solid white 5px;
+    margin-top: 60px;
+    width: 175px;
+  }
+  .details {
+    padding: 25px;
+    margin-top: 50px;
+  }
+  .my_name {
+    font-size: 37px;
+    font-weight: 400;
+  }
+  .my_title {
+    font-size: 16px;
+    font-weight: 200;
+    margin-bottom: 5px;
+  }
+  .my_location {
+    font-size: 16px;
+    color: rgba(3, 3, 3, 0.808);
+    margin-bottom: 15px;
+  }
+  .my_connections {
+    font-size: 17px;
+    color: #0a66c6;
+    font-weight: 400;
+  }
+
+  .experience_section {
+    margin-top: 70px;
+    margin-right: 150px;
+  }
+  .field {
+    margin-top: 20px;
+    font-size: 25px;
+  }
+  .icon {
+    position: absolute;
+    right: 110px;
+    width: 25px;
+    height: 25px;
+    padding: 5px;
+    text-align: center;
+    color: white;
+    transform: translatex(-129px) translatey(-5px);
+  }
+  .udacity {
+    background-color: #1f15ff;
+    font-size: 22px;
+  }
+  .upwork {
+    background-color: #15a800;
+    font-size: 19px;
+  }
+
+  .content_container {
+    background-color: #ffffff;
+    border-radius: 15px;
+    position: relative;
+    width: 85vw;
+    margin-top: 15px;
+    background-size: contain;
+  }
+  .about_me-header {
+    font-size: 22px;
+    font-weight: 500;
+    padding: 30px;
+  }
+  .about_me-text {
+    font-size: 20px;
+    padding-left: 30px;
+    padding-top: 0px;
+    padding-bottom: 30px;
+  }
+  .experience_header {
+    font-size: 20px;
+    font-size: 22px;
+    font-weight: 500;
+    padding: 30px;
+  }
+  .job_title {
+    font-size: 22px !important;
+    font-weight: 400;
+    color: #2e302e;
+  }
+  .job_info p {
+    font-size: 15px;
+    margin-left: 70px;
+  }
+  .skills {
+    font-size: 18px !important;
+    width: 85%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .fake_nav {
+    display: none;
+  }
+  .section_name {
+    display: none;
+  }
+  .linkedin_container {
+    background-color: #f3f2ef;
+    font-size: 30px;
+    padding-bottom: 50px;
+  }
+  .linkedin_container header {
+    background-color: #ffffff;
+    position: relative;
+  }
+  .cover {
+    background-color: black;
+    height: 45px;
+    padding: 25px;
+  }
+  .my_picture {
+    border-radius: 50%;
+    border: solid white 4px;
+    width: 130px;
+  }
+  .details {
+    padding: 10px;
+    margin-top: 60px;
+  }
+  .my_name {
+    font-size: 25px;
+    font-weight: 400;
+  }
+  .my_title {
+    font-size: 17px;
+    color: rgba(0, 0, 0, 0.897);
+    font-weight: 200;
+    margin-bottom: 15px;
+  }
+  .my_location {
+    font-size: 15px;
+    color: rgba(3, 3, 3, 0.616);
+    margin-bottom: 15px;
+  }
+  .my_connections {
+    font-size: 14px;
+    color: #0a66c6;
+    font-weight: 400;
+  }
+  .for-phone-only {
+    font-size: 16px;
+    color: rgba(3, 3, 3, 0.808);
+  }
+
+  .experience_section {
+    display: none;
+  }
+
+  .content_container {
+    background-color: #ffffff;
+    position: relative;
+    margin-top: 15px;
+    background-size: contain;
+    padding-bottom: 15px;
+  }
+  .about_me-header {
+    font-size: 20px;
+    font-weight: 400;
+    padding: 15px;
+    padding-bottom: 25px;
+  }
+  .about_me-text {
+    font-size: 15px;
+    font-weight: 300;
+    padding-left: 15px;
+    padding-bottom: 15px;
+  }
+  .experience_header {
+    font-size: 20px !important;
+    font-size: 22px;
+    font-weight: 400;
+    padding: 15px;
+  }
+  .job_title {
+    font-size: 19px !important;
+    font-weight: 400 !important;
+    color: #2e302e;
+  }
+  .job_info p {
+    font-size: 14px;
+    font-weight: 300;
+    color: rgb(82, 82, 82);
+    margin-left: 70px;
+    padding-bottom: 2px;
+  }
+  .skills {
+    width: 80vw;
+    font-size: 15px !important;
+    padding-top: 8px;
+  }
+  .work_icon{
+    position: absolute;
+    left: -60px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 37px !important;
+    font-weight: 300;
+    background-color: #15a800;
+    color: white !important;
+    padding: 3px;
+  }
+}

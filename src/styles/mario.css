@@ -1,0 +1,162 @@
+@media screen and (min-width: 601px) {
+  .mario_container {
+    background-image: url("../Assets//mario_background_landScabe.jpg");
+    background-repeat: none;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    height: 660px;
+  }
+
+  .game_container {
+    position: absolute;
+    right: 250px;
+    bottom: 92px;
+  }
+  .mario {
+    width: 100px;
+    position: relative;
+  }
+  .infoCube {
+    width: 60px;
+    position: relative;
+    left: 100px;
+    top: -193px;
+  }
+
+  .stopIt {
+    position: absolute;
+    right: 20vw;
+    top: 80px;
+    font-size: 25px;
+    width: 200px;
+  }
+  .mario_container {
+    display: flex;
+    justify-content: space-between;
+  }
+  .flex-left {
+    margin-left: 200px;
+    margin-top: 200px;
+  }
+  .shuffle-text-char {
+    animation: 0.5s ease-in-out both myWordEnter;
+    font-size: 90px;
+    color: rgb(19, 18, 18);
+  }
+  @keyframes myWordEnter {
+    0% {
+      opacity: 0;
+      transform: translate(-100%, 0) scale(5);
+    }
+
+    100% {
+      opacity: 1;
+      transform: translate(0, 0) scale(1);
+    }
+  }
+  .flex-left div {
+    font-size: 40px;
+    font-weight: 1;
+    color: rgb(0, 0, 0);
+    margin-left: 50px;
+  }
+}
+@media (max-width: 600px) and (min-width: 300px) {
+  .mario_container {
+    background-image: url("../Assets/bg-mobile.png");
+    background-repeat: none;
+    background-size: cover;
+    background-position: center;
+    height: 780px;
+    position: relative;
+  }
+  .game_container {
+    position: absolute;
+    right: 50px;
+    bottom: 86px;
+  }
+  .mario {
+    width: 100px;
+    position: relative;
+  }
+  .infoCube {
+    width: 60px;
+    position: relative;
+    left: 115px;
+    top: -185px;
+  }
+  .stopIt {
+    position: absolute;
+    right: 5vw;
+    top: 80px;
+    font-size: 25px;
+  }
+  .mario_container {
+    display: flex;
+    justify-content: space-between;
+  }
+  .flex-left {
+    margin-top: 250px;
+    margin-left: 10px;
+  }
+  .shuffle-text-char {
+    animation: 0.5s ease-in-out both myWordEnter;
+    font-size: 45px;
+    color: rgb(19, 18, 18);
+  }
+  .title {
+    margin-left: 17px;
+    font-size: 22px;
+    font-weight: 300;
+  }
+}
+@media (max-width: 299px) {
+  .mario_container {
+    background-image: url("../Assets/bg-mobile.png");
+    background-repeat: none;
+    background-size: cover;
+    background-position: center;
+    height: 780px;
+    position: relative;
+  }
+  .game_container {
+    position: absolute;
+    right: 50px;
+    bottom: 86px;
+  }
+  .mario {
+    width: 100px;
+    position: relative;
+  }
+  .infoCube {
+    width: 60px;
+    position: relative;
+    left: 65px;
+    top: -82px;
+  }
+  .stopIt {
+    position: absolute;
+    right: 5vw;
+    top: 80px;
+    font-size: 25px;
+  }
+  .mario_container {
+    display: flex;
+    justify-content: space-between;
+  }
+  .flex-left {
+    margin-top: 250px;
+    margin-left: 10px;
+  }
+  .shuffle-text-char {
+    animation: 0.5s ease-in-out both myWordEnter;
+    font-size: 30px;
+    color: rgb(19, 18, 18);
+  }
+  .title {
+    margin-left: 17px;
+    font-size: 22px;
+    font-weight: 300;
+  }
+}

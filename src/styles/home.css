@@ -1,0 +1,56 @@
+@media screen and (min-width: 601px) {
+
+  .welcome_section {
+    background-color: black;
+  }
+  .welcome_words {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-family: sans-serif;
+    font-size: 50px;
+    color: white;
+    text-align: center;
+  }
+  .arrow_down_icon {
+    position: absolute;
+    right: 100px;
+    font-size: 60px;
+    bottom: 50px;
+  }
+  .linkedin_container{
+    display: grid;
+    justify-content: center;
+    height: 200vh;
+  }
+
+
+}
+@media (max-width: 600px) {
+  .welcome_section {
+    background-color: black;
+  }
+  .welcome_words {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-family: sans-serif;
+    font-size: 25px;
+    color: white;
+    text-align: center;
+  }
+  .arrow_down_icon {
+    position: absolute;
+    right: 50px;
+    font-size: 40px;
+    bottom: 50px;
+  }
+
+  .mario_section {
+    height: 100vh;
+  }
+}
