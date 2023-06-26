@@ -3,25 +3,165 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background-color: rgb(252, 252, 252);
+}
+.contact-container {
+  background-image: url("../public/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media (width > 768px) {
+  .jump {
+    animation: jumping linear 0.2 s;
+    position: relative;
+  }
+
+  @keyframes jumping {
+    from {
+      top: 0;
+    }
+    to {
+      top: -30px;
+    }
+  }
+
+  .link-animation-1 {
+    animation: linkone forwards 1s;
+  }
+
+  @keyframes linkone {
+    0% {
+      transform: rotate(90);
+      position: absolute;
+      left: 100px;
+      top: 0;
+    }
+    100% {
+      transform: rotate(0);
+      position: absolute;
+      left: 1px;
+      top: -25vh;
+    }
+  }
+
+  .link-animation-2 {
+    animation: linkone2 forwards 1s;
+  }
+
+  @keyframes linkone2 {
+    0% {
+      transform: rotate(90);
+      position: absolute;
+      left: 100px;
+      top: 0;
+    }
+    100% {
+      transform: rotate(0);
+      position: absolute;
+      left: 1px;
+      top: -22vh;
+    }
+  }
+
+  .link-animation-3 {
+    animation: linkone3 forwards 1s;
+  }
+
+  @keyframes linkone3 {
+    0% {
+      transform: rotate(90);
+      position: absolute;
+      left: 100px;
+      top: 0;
+    }
+    100% {
+      transform: rotate(0);
+      position: absolute;
+      left: 1px;
+      top: -19vh;
+    }
+  }
+}
+
+@media (width <= 768px) {
+  .jump {
+    animation: jumping linear 0.2 s;
+    position: relative;
+  }
+
+  @keyframes jumping {
+    from {
+      top: 0;
+    }
+    to {
+      top: -30px;
+    }
+  }
+
+  .link-animation-1 {
+    animation: linkone forwards 1s;
+  }
+
+  @keyframes linkone {
+    0% {
+      transform: rotate(90);
+      position: absolute;
+      left: 100px;
+      top: 0;
+    }
+    100% {
+      transform: rotate(0);
+      position: absolute;
+      left: 1px;
+      top: -5vh;
+    }
+  }
+
+  .link-animation-2 {
+    animation: linkone2 forwards 1s;
+  }
+
+  @keyframes linkone2 {
+    0% {
+      transform: rotate(90);
+      position: absolute;
+      left: 100px;
+      top: 0;
+    }
+    100% {
+      transform: rotate(0);
+      position: absolute;
+      left: 1px;
+      top: -3vh;
+    }
+  }
+
+  .link-animation-3 {
+    animation: linkone3 forwards 1s;
+  }
+
+  @keyframes linkone3 {
+    0% {
+      transform: rotate(90);
+      position: absolute;
+      left: 100px;
+      top: 0;
+    }
+    100% {
+      transform: rotate(0);
+      position: absolute;
+      left: 1px;
+      top: -1vh;
+    }
+  }
+}
+
+.square {
+}
+.square:hover {
+  transform: rotate(375deg);
 }
