@@ -104,6 +104,8 @@ body {
 
   .link-animation-1 {
     animation: linkone forwards 1s;
+    color: white;
+    padding-left: 5px;
   }
 
   @keyframes linkone {
@@ -117,11 +119,14 @@ body {
       transform: rotate(0);
       position: absolute;
       left: 1px;
-      top: -5vh;
+      top: -7vh;
     }
   }
 
   .link-animation-2 {
+    color: white;
+    padding-left: 5px;
+
     animation: linkone2 forwards 1s;
   }
 
@@ -136,12 +141,14 @@ body {
       transform: rotate(0);
       position: absolute;
       left: 1px;
-      top: -3vh;
+      top: -4vh;
     }
   }
 
   .link-animation-3 {
     animation: linkone3 forwards 1s;
+    color: white;
+    padding-left: 5px;
   }
 
   @keyframes linkone3 {
@@ -166,7 +173,7 @@ body {
 
 .square-container {
   cursor: pointer;
-} 
+}
 .square-container:hover p {
   opacity: 100%;
 }

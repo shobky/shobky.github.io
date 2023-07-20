@@ -11,7 +11,9 @@ export default function Contact() {
   const [counter, setCounter] = useState(0);
 
   const [jumpAudio, setJumpAudio] = useState<HTMLAudioElement | null>(null);
-  const [powerUPAudio, setPowerUPAudio] = useState<HTMLAudioElement | null>(null);
+  const [powerUPAudio, setPowerUPAudio] = useState<HTMLAudioElement | null>(
+    null
+  );
 
   useEffect(() => {
     // Create the Audio objects only on the client-side
@@ -45,23 +47,45 @@ export default function Contact() {
         <div>
           {counter >= 1 && (
             <p className=" text-md md:text-[calc(.7vw+.7vh)] rotate-90 link-animation-1 absolute w-fit ">
-              <a className="hover:text-cyan-400" target="blank" href={`https://github.com/shobky`}> github.com/shobky </a>
+              <a
+                className="hover:text-cyan-400"
+                target="blank"
+                href={`https://github.com/shobky`}
+              >
+                {" "}
+                github.com/shobky{" "}
+              </a>
             </p>
           )}
           {counter >= 2 && (
             <p className=" text-md md:text-[calc(.7vw+.7vh)] rotate-90 link-animation-2 absolute w-fit ">
               {" "}
-              <a className="hover:text-cyan-400" target="blank" href={`https://twitter.com/_shobky`}> twitter.com/_shobky </a>
+              <a
+                className="hover:text-cyan-400"
+                target="blank"
+                href={`https://twitter.com/_shobky`}
+              >
+                {" "}
+                twitter.com/_shobky{" "}
+              </a>
             </p>
           )}
           {counter >= 3 && (
             <p className=" text-md md:text-[calc(.7vw+.7vh)] rotate-90 link-animation-3 absolute w-fit ">
               {" "}
-              <a className="hover:text-cyan-400" target="blank" href={`https://linkedin.com/in/ahmed-shobky`}> linkedin.com/in/ahmed-shobky </a>
+              <a
+                className="hover:text-cyan-400"
+                target="blank"
+                href={`https://linkedin.com/in/ahmed-shobky`}
+              >
+                {" "}
+                linkedin.com/in/ahmed-shobky{" "}
+              </a>
             </p>
           )}
         </div>
         <Image
+          onContextMenu={e => e.preventDefault()}
           id="cube"
           className={`w-1/5 ml-[15%]  ease-in-out duration-0
         ${midJump && "scale-105"}
@@ -74,9 +98,11 @@ export default function Contact() {
         <button
           disabled={jumping}
           onClick={handleClick}
-          className="w-full flex justify-center"
+          className="w-full flex justify-center select-none "
         >
           <Image
+            
+            onContextMenu={e => e.preventDefault()}
             id="mario"
             className={`w-1/3 aspect-square mb-[5%]
         ${jumping && " relative  -top-10  "}
