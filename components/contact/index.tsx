@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import mario1 from "@/public/mario1.png";
 import mario2 from "@/public/mario2.png";
 import cube from "@/public/cube.webp";
@@ -10,16 +10,22 @@ export default function Contact() {
   const [midJump, setMidJump] = useState(false);
   const [counter, setCounter] = useState(0);
 
-  const jumpAudio = new Audio("/jump.mp3");
-  const powerUPAudio = new Audio("/powerup.wav");
+  const [jumpAudio, setJumpAudio] = useState<HTMLAudioElement | null>(null);
+  const [powerUPAudio, setPowerUPAudio] = useState<HTMLAudioElement | null>(null);
+
+  useEffect(() => {
+    // Create the Audio objects only on the client-side
+    setJumpAudio(new Audio("/jump.mp3"));
+    setPowerUPAudio(new Audio("/powerup.wav"));
+  }, []);
 
   const handleClick = () => {
     if (counter < 2) {
       setCounter(counter + 1);
-      jumpAudio.play();
+      jumpAudio?.play();
     } else {
       setCounter(counter + 1);
-      powerUPAudio.play();
+      powerUPAudio?.play();
     }
     setJumping(true);
     setTimeout(() => {
