@@ -160,8 +160,13 @@ body {
   }
 }
 
-.square {
-}
-.square:hover {
+/* .square:hover {
   transform: rotate(375deg);
+} */
+
+.square-container{
+cursor: pointer;
+}
+.square-container:hover p{
+  opacity: 100%;
 }
