@@ -6,6 +6,15 @@ const inter = Inter({ subsets: ['latin'] })
 export const metadata = {
   title: 'Ahmed Shobky',
   description: 'This is my portfolio, Some projects I worked on and click mario to get my links',
+  openGraph: {
+    images: ['/opengraph-image.png'],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Ahmed Shobky',
+    description: 'This is my portfolio, Some projects I worked on and click mario to get my links',
+    images: ['/twitter-image.png'],
+  },
 }
 
 export default function RootLayout({
