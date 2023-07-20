@@ -5,13 +5,13 @@ import mario1 from "@/public/mario1.png";
 import mario2 from "@/public/mario2.png";
 import cube from "@/public/cube.webp";
 
-const jumpAudio = new Audio("/jump.mp3");
-const powerUPAudio = new Audio("/powerup.wav");
-
 export default function Contact() {
   const [jumping, setJumping] = useState(false);
   const [midJump, setMidJump] = useState(false);
   const [counter, setCounter] = useState(0);
+
+  const jumpAudio = new Audio("/jump.mp3");
+  const powerUPAudio = new Audio("/powerup.wav");
 
   const handleClick = () => {
     if (counter < 2) {
@@ -33,25 +33,25 @@ export default function Contact() {
 
   return (
     <div
-      className={ `  w-[90%] min-w-[90%] aspect-square contact-container relative `}
+      className={`  w-[90%] min-w-[90%] aspect-square contact-container relative `}
     >
-      <div className="absolute  bottom-[9.5%] flex flex-col  items-center gap-[3.6vh] w-full ">
+      <div className="absolute  bottom-[5%] flex flex-col  items-center gap-[3.6vh] w-full ">
         <div>
           {counter >= 1 && (
             <p className=" text-md md:text-[calc(.7vw+.7vh)] rotate-90 link-animation-1 absolute w-fit ">
-              github.com/shobky
+              <a className="hover:text-cyan-400" target="blank" href={`https://github.com/shobky`}> github.com/shobky </a>
             </p>
           )}
           {counter >= 2 && (
             <p className=" text-md md:text-[calc(.7vw+.7vh)] rotate-90 link-animation-2 absolute w-fit ">
               {" "}
-              twitter.com/_shobky
+              <a className="hover:text-cyan-400" target="blank" href={`https://twitter.com/_shobky`}> twitter.com/_shobky </a>
             </p>
           )}
           {counter >= 3 && (
             <p className=" text-md md:text-[calc(.7vw+.7vh)] rotate-90 link-animation-3 absolute w-fit ">
               {" "}
-              linkedin.com/in/ahmed-shobky
+              <a className="hover:text-cyan-400" target="blank" href={`https://linkedin.com/in/ahmed-shobky`}> linkedin.com/in/ahmed-shobky </a>
             </p>
           )}
         </div>
