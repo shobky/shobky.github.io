@@ -15,7 +15,7 @@ export default function Information() {
           </span> 
           <br/>
         </h2>
-        <p className="text-lg w-[95%]">Click mario for contact, More info on <a className="underline" target="blank" href="https://linkedin.com/in/ahmed-shobky">Linkedin</a></p>
+        <p className="md:text-[calc(.8vw+.8vh)] w-[95%]">Click mario for contact, More info on <a className="underline" target="blank" href="https://linkedin.com/in/ahmed-shobky">Linkedin</a></p>
 
       </div>
       <div className="w-[100%] md:w-full ">
