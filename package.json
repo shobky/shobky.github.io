@@ -6,7 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "export": "next export",
-    "build:css": "postcss styles/tailwind.css -o public/styles.css",
+    "build:css": "postcss styles/tailwind.css -o app/globals.css",
     "start": "next start",
     "lint": "next lint"
   },
