@@ -1,4 +1,13 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {}
+const isGithubActions = process.env.GITHUB_ACTIONS || false
 
-module.exports = nextConfig
+let assetPrefix = ''
+
+if (isGithubActions) {
+  const repo = process.env.GITHUB_REPOSITORY.replace(/.*?\//, '')
+  assetPrefix = `/${repo}/`
+}
+
+module.exports = {
+  assetPrefix: assetPrefix,
+}
