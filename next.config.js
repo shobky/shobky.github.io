@@ -3,14 +3,13 @@
 //needs conditional config for github action 
 //vercel build fails 
 //for develobment mode comment everything in nextConfig object for now
-const isGithubActions = process.env.GITHUB_ACTIONS || false
 
-const nextConfig = isGithubActions ? {
+const nextConfig = {
     output: "export",
     basePath: "/nextjs-github-pages",
     images: {
         unoptimized: false,
     },
-} : {}
+} 
 
 module.exports = nextConfig
