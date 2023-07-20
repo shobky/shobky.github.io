@@ -39,7 +39,7 @@ export default function Contact() {
 
   return (
     <div
-      className={`  w-[90%] min-w-[90%] aspect-square contact-container relative `}
+      className={` w-[100%] min-w-[90%] aspect-square contact-container relative `}
     >
       <div className="absolute  bottom-[5%] flex flex-col  items-center gap-[3.6vh] w-full ">
         <div>
@@ -64,7 +64,7 @@ export default function Contact() {
         <Image
           id="cube"
           className={`w-1/5 ml-[15%]  ease-in-out duration-0
-        ${midJump && " scale-105"}
+        ${midJump && "scale-105"}
         `}
           src={cube}
           alt="Mario"
@@ -78,8 +78,8 @@ export default function Contact() {
         >
           <Image
             id="mario"
-            className={`w-1/3 aspect-square
-        ${jumping && " relative -top-9  "}
+            className={`w-1/3 aspect-square mb-[5%]
+        ${jumping && " relative  -top-10  "}
         `}
             src={jumping ? mario2 : mario1}
             alt="Mario"

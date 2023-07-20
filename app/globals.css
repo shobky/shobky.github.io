@@ -1,7 +1,6 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
 :root {
 }
 
@@ -12,6 +11,7 @@ body {
   background-image: url("../public/background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  width: 93%;
 }
 
 @media (width > 768px) {
@@ -164,9 +164,9 @@ body {
   transform: rotate(375deg);
 } */
 
-.square-container{
-cursor: pointer;
-}
-.square-container:hover p{
+.square-container {
+  cursor: pointer;
+} 
+.square-container:hover p {
   opacity: 100%;
 }
