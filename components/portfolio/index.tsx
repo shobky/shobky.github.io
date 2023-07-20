@@ -1,7 +1,5 @@
 "use client";
 
-import { MouseEvent } from "react";
-
 export default function Portfolio() {
   return (
     <div className=" portfolio-wrapper  md:float-right flex flex-wrap mr-[5%] w-full md:w-[54%] 2xl:absolute 2xl:right-0    bg-black relative overflow-hidden    ">
