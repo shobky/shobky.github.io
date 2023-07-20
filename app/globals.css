@@ -44,7 +44,7 @@ body {
       transform: rotate(0);
       position: absolute;
       left: 1px;
-      top: -25vh;
+      top: -23vh;
     }
   }
 
@@ -63,7 +63,7 @@ body {
       transform: rotate(0);
       position: absolute;
       left: 1px;
-      top: -22vh;
+      top: -20vh;
     }
   }
 
@@ -82,7 +82,7 @@ body {
       transform: rotate(0);
       position: absolute;
       left: 1px;
-      top: -19vh;
+      top: -17vh;
     }
   }
 }
