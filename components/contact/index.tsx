@@ -22,7 +22,7 @@ export default function Contact() {
   }, []);
 
   const handleClick = () => {
-    if (counter < 2) {
+    if (counter < 3) {
       setCounter(counter + 1);
       jumpAudio?.play();
     } else {
@@ -47,6 +47,20 @@ export default function Contact() {
         <div>
           {counter >= 1 && (
             <p className=" text-md md:text-[calc(.7vw+.7vh)] rotate-90 link-animation-1 absolute w-fit ">
+               <a
+                className="hover:text-cyan-400"
+                target="blank"
+                href={`https://linkedin.com/in/ahmed-shobky`}
+              >
+                {" "}
+                linkedin.com/in/ahmed-shobky{" "}
+              </a>
+            </p>
+          )}
+          {counter >= 2 && (
+            <p className=" text-md md:text-[calc(.7vw+.7vh)] rotate-90 link-animation-2 absolute w-fit ">
+              {" "}
+       
               <a
                 className="hover:text-cyan-400"
                 target="blank"
@@ -54,19 +68,6 @@ export default function Contact() {
               >
                 {" "}
                 github.com/shobky{" "}
-              </a>
-            </p>
-          )}
-          {counter >= 2 && (
-            <p className=" text-md md:text-[calc(.7vw+.7vh)] rotate-90 link-animation-2 absolute w-fit ">
-              {" "}
-              <a
-                className="hover:text-cyan-400"
-                target="blank"
-                href={`https://twitter.com/_shobky`}
-              >
-                {" "}
-                twitter.com/_shobky{" "}
               </a>
             </p>
           )}
@@ -84,6 +85,19 @@ export default function Contact() {
             </p>
           )}
         </div>
+        {counter >= 4 && (
+            <p className=" text-md md:text-[calc(.7vw+.7vh)] rotate-90 link-animation-4 absolute w-fit ">
+              <a
+                className="hover:text-cyan-400"
+                target="blank"
+                href={`https://twitter.com/_shobky`}
+              >
+                {" "}
+                twitter.com/_shobky{" "}
+                
+              </a>
+            </p>
+          )}
         <Image
           onContextMenu={e => e.preventDefault()}
           id="cube"

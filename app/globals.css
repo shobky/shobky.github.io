@@ -85,6 +85,24 @@ body {
       top: -17vh;
     }
   }
+  .link-animation-4 {
+    animation: linkone4 forwards 1s;
+  }
+
+  @keyframes linkone4 {
+    0% {
+      transform: rotate(90);
+      position: absolute;
+      left: 100px;
+      top: 0;
+    }
+    100% {
+      transform: rotate(0);
+      position: absolute;
+      left: 1px;
+      top: -14vh;
+    }
+  }
 }
 
 @media (width <= 768px) {
@@ -163,6 +181,27 @@ body {
       position: absolute;
       left: 1px;
       top: -1vh;
+    }
+  }
+  
+  .link-animation-4 {
+    animation: linkone4 forwards 1s;
+    color: white;
+    padding-left: 5px;
+  }
+
+  @keyframes linkone4 {
+    0% {
+      transform: rotate(90);
+      position: absolute;
+      left: 100px;
+      top: 0;
+    }
+    100% {
+      transform: rotate(0);
+      position: absolute;
+      left: 1px;
+      top: -4vh;
     }
   }
 }

@@ -4,16 +4,15 @@ import Contact from "../contact";
 export default function Information() {
   return (
     <div className="md:fixed top-0 left-0 h-full w-[100%] md:w-[30%] pl-[7%]  py-[5vh] md:py-[3%] flex flex-col justify-center md:gap-0 gap-[5vh] md:justify-between ">
-      <div>
-        <h1 className="text-7xl md:text-[calc(2.5vw+2.5vh)] leading-[9vh] lg:leading-[7vh] font-semibold">
+      <div className="text-md md:text-[calc(.8vw+.8vh)] ">
+        <h1 className="text-7xl md:text-[calc(2.5vw+2.5vh)] font-semibold">
           Ahmed Shobky
         </h1>
-        <h2 className="text-lg md:text-[calc(.8vw+.8vh)] mt-[4vh] md:mt-[2vh] w-[95%] font-light ">
-          <span className="font-medium">Software Developer,</span> loves to
+        <h2 className="mt-[3vh]">
+          <span className="font-semibold">Software Developer,</span> loves to
           create things.
-          <br />
         </h2>
-        <p className="md:text-[calc(.8vw+.8vh)] w-[95%]">
+        <p className="">
           Click on mario for more information!
         </p>
       </div>
