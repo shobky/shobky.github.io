@@ -53,7 +53,7 @@ export default function Contact() {
                 href={`https://linkedin.com/in/ahmed-shobky`}
               >
                 {" "}
-                linkedin.com/in/ahmed-shobky{" "}
+               shobkyy@gmail.com{" "}
               </a>
             </p>
           )}
