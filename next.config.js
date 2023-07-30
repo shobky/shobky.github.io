@@ -10,4 +10,4 @@ const nextConfig = {
     },
 }
 
-module.exports = environment && environment === 'dev' ? {} : nextConfig 
+module.exports = {}
