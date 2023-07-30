@@ -1,6 +1,5 @@
 /** @type {import('next').NextConfig} */
 
-environment = process.env.NEXT_PUBLIC_ENV
 
 const nextConfig = {
     output: "export",
@@ -8,6 +7,6 @@ const nextConfig = {
     images: {
         unoptimized: false,
     },
-}
+} 
 
 module.exports = nextConfig
