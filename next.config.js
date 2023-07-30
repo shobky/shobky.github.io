@@ -1,8 +1,6 @@
 /** @type {import('next').NextConfig} */
 
-//needs conditional config for github action 
-//vercel build fails 
-//for develobment mode comment everything in nextConfig object for now
+environment = process.env.NEXT_PUBLIC_ENV
 
 const nextConfig = {
     output: "export",
@@ -10,6 +8,6 @@ const nextConfig = {
     images: {
         unoptimized: false,
     },
-} 
+}
 
-module.exports = nextConfig
+module.exports = environment && environment === 'dev' ? {} : nextConfig 

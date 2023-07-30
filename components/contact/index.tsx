@@ -4,6 +4,7 @@ import React, { useEffect, useState } from "react";
 import mario1 from "@/public/mario1.png";
 import mario2 from "@/public/mario2.png";
 import cube from "@/public/cube.webp";
+import { Links } from "./Links";
 
 export default function Contact() {
   const [jumping, setJumping] = useState(false);
@@ -41,63 +42,10 @@ export default function Contact() {
 
   return (
     <div
-      className={` w-[100%] min-w-[90%] aspect-square contact-container relative `}
+      className={`contact-container relative `}
     >
       <div className="absolute  bottom-[5%] flex flex-col  items-center gap-[3.6vh] w-full ">
-        <div>
-          {counter >= 1 && (
-            <p className=" text-md md:text-[calc(.7vw+.7vh)] rotate-90 link-animation-1 absolute w-fit ">
-               <a
-                className="hover:text-cyan-400"
-                target="blank"
-                href={`https://linkedin.com/in/ahmed-shobky`}
-              >
-                {" "}
-               shobkyy@gmail.com{" "}
-              </a>
-            </p>
-          )}
-          {counter >= 2 && (
-            <p className=" text-md md:text-[calc(.7vw+.7vh)] rotate-90 link-animation-2 absolute w-fit ">
-              {" "}
-       
-              <a
-                className="hover:text-cyan-400"
-                target="blank"
-                href={`https://github.com/shobky`}
-              >
-                {" "}
-                github.com/shobky{" "}
-              </a>
-            </p>
-          )}
-          {counter >= 3 && (
-            <p className=" text-md md:text-[calc(.7vw+.7vh)] rotate-90 link-animation-3 absolute w-fit ">
-              {" "}
-              <a
-                className="hover:text-cyan-400"
-                target="blank"
-                href={`https://linkedin.com/in/ahmed-shobky`}
-              >
-                {" "}
-                linkedin.com/in/ahmed-shobky{" "}
-              </a>
-            </p>
-          )}
-        </div>
-        {counter >= 4 && (
-            <p className=" text-md md:text-[calc(.7vw+.7vh)] rotate-90 link-animation-4 absolute w-fit ">
-              <a
-                className="hover:text-cyan-400"
-                target="blank"
-                href={`https://twitter.com/_shobky`}
-              >
-                {" "}
-                twitter.com/_shobky{" "}
-                
-              </a>
-            </p>
-          )}
+        <Links counter={counter} />
         <Image
           onContextMenu={e => e.preventDefault()}
           id="cube"
@@ -112,10 +60,9 @@ export default function Contact() {
         <button
           disabled={jumping}
           onClick={handleClick}
-          className="w-full flex justify-center select-none "
+          className="w-full flex justify-center select-none focus:n "
         >
           <Image
-            
             onContextMenu={e => e.preventDefault()}
             id="mario"
             className={`w-1/3 aspect-square mb-[5%]
