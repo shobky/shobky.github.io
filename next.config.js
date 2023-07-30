@@ -1,5 +1,6 @@
 /** @type {import('next').NextConfig} */
 
+isDev = process.env.NEXT_PUBLIC_ENV === 'dev' ? true : false
 
 const nextConfig = {
     output: "export",
@@ -7,6 +8,6 @@ const nextConfig = {
     images: {
         unoptimized: false,
     },
-} 
+}
 
-module.exports = nextConfig
+module.exports = isDev ? {} : nextConfig

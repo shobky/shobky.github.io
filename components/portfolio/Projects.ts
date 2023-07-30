@@ -21,7 +21,7 @@ export const projects: Project[] = [
   },
   {
     title: "Honor",
-    link: "https://honor.vercel.app",
+    link: "https://honor-two.vercel.app",
     cover: honorImg,
     discription: "Corporate website, with interactive caroucel",
   },
