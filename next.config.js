@@ -3,6 +3,7 @@
 isDev = process.env.NEXT_PUBLIC_ENV === "dev" ? true : false;
 
 const nextConfig = {
+  reactStrictMode: true,
   output: "export",
   basePath: "/nextjs-github-pages",
   images: {
