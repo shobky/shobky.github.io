@@ -4,7 +4,8 @@ isDev = process.env.NEXT_PUBLIC_ENV === "dev" ? true : false;
 
 const nextConfig = {
   output: "export",
-  basePath: "/",
+  assetPrefix: `/shobky.github.io/`,
+  basePath: `/shobky.github.io`,
   images: {
     unoptimized: false,
     domains: ["opengraph.githubassets.com"],
