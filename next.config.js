@@ -17,4 +17,4 @@ const devConfig = {
   },
 };
 
-module.exports = isDev ? devConfig : nextConfig;
+module.exports = nextConfig;
