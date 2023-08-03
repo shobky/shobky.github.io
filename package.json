@@ -6,7 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "export": "next export",
-    "build:css": "postcss 'public/globals.css'",
+    "build:css": "postcss public/globals.css",
     "start": "next start",
     "lint": "next lint"
   },
