@@ -3,7 +3,7 @@
 isDev = process.env.NEXT_PUBLIC_ENV === "dev" ? true : false;
 
 const nextConfig = {
-  output: "static",
+  output: "export",
   basePath: "shobky.github.io",
   images: {
     unoptimized: false,
