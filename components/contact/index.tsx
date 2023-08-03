@@ -10,7 +10,6 @@ export default function Contact() {
   const [jumping, setJumping] = useState(false);
   const [midJump, setMidJump] = useState(false);
   const [counter, setCounter] = useState(0);
-
   const [jumpAudio, setJumpAudio] = useState<HTMLAudioElement | null>(null);
   const [powerUPAudio, setPowerUPAudio] = useState<HTMLAudioElement | null>(
     null

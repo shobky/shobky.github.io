@@ -1,5 +1,6 @@
 import Cover from "./Cover";
-import { projects } from "./Projects";
+import { projects } from "../../lib/Projects";
+import Link from "next/link";
 
 export default function Portfolio() {
   return (
@@ -9,7 +10,7 @@ export default function Portfolio() {
           key={project.link}
           className="relative ease-in-out duration-75 aspect-square h-full w-full"
         >
-          <a href={project.link} target="blank" className="group">
+          <Link href={`/${project.title}`} className="group">
             <Cover
               src={project.cover}
               styles="absolute object-cover w-full h-full  opacity-75 hover:opacity-0 duration-75"
@@ -20,7 +21,7 @@ export default function Portfolio() {
                 {project.discription}
               </p>
             </h1>
-          </a>
+          </Link>
         </div>
       ))}
     </div>
