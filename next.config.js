@@ -4,7 +4,7 @@ isDev = process.env.NEXT_PUBLIC_ENV === "dev" ? true : false;
 
 const nextConfig = {
   output: "static",
-  basePath: "/",
+  basePath: "",
   images: {
     unoptimized: false,
     domains: ["opengraph.githubassets.com"],
