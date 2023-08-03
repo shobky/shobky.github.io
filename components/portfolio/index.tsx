@@ -1,5 +1,5 @@
 import Cover from "./Cover";
-import { projects } from "../../lib/Projects";
+import { projects } from "@/lib/Projects";
 import Link from "next/link";
 
 export default function Portfolio() {
