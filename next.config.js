@@ -3,6 +3,7 @@
 isDev = process.env.NEXT_PUBLIC_ENV === "dev" ? true : false;
 
 const nextConfig = {
+  output: isDev ? "export" : "",
   assetPrefix: isDev ? "" : "/shobky.github.io",
   basePath: isDev ? "" : "/shobky.github.io",
   images: {
@@ -14,9 +15,8 @@ const nextConfig = {
         port: "",
         pathname: "/*/shobky/**",
       },
-    ]
+    ],
   },
 };
-
 
 module.exports = nextConfig;
