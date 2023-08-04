@@ -38,7 +38,7 @@ export const projects: Project[] = [
   },
   {
     title: "Spotin",
-    link: "spotin-demo.vercel.app",
+    link: "https://spotin-demo.vercel.app",
     repos: ["spotin.system", "spotin.space"],
     cover: spotinImg,
     discription: "Full stack POS built with FireBase",
