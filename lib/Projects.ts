@@ -38,11 +38,11 @@ export const projects: Project[] = [
   },
   {
     title: "Spotin",
-    link: "https://spotin.onrender.com/admin/dashboard",
+    link: "spotin-demo.vercel.app",
     repos: ["spotin.system", "spotin.space"],
     cover: spotinImg,
-    discription: "Small full-stack POS with MERN, (onrender loads data slowly)",
-    long: "This is a full stack POS built with MERN stack and there is the production version built with React and Firebase which is being used in production and the website has 200 users. The firebase one listed spotin-system",
+    discription: "Full stack POS built with FireBase",
+    long: "This is a full stack POS built with Firebase and React, this is connected to a demo database cause the production project is being used by client with 200 users. Also tried building it with MERN stack and implemented most of the features in it with a new design. Onreder is really slow tho, so wait a bit.",
   },
   {
     title: "AMS",
