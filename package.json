@@ -5,7 +5,6 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build ",
-    "biuld:css": "postcss app/globals.css",
     "start": "next start",
     "lint": "next lint"
   },
