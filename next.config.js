@@ -3,7 +3,7 @@
 isDev = process.env.NEXT_PUBLIC_ENV === "dev" ? true : false;
 
 const nextConfig = {
-  output: isDev ? "export" : "",
+  output: isDev ? "" : "export",
   assetPrefix: isDev ? "" : "/shobky.github.io",
   basePath: isDev ? "" : "/shobky.github.io",
   images: {
